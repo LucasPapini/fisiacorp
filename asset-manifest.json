@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/%7Brepo-name%7D/static/js/main.113548cc.js",
+    "static/media/bandeira.svg": "/%7Brepo-name%7D/static/media/bandeira.544213856240b0299263e593a4dc69ca.svg",
+    "static/media/iconManRockt.svg": "/%7Brepo-name%7D/static/media/iconManRockt.6c73f575700251634934c6bb7132fc3d.svg",
+    "static/media/3000434.png": "/%7Brepo-name%7D/static/media/3000434.7d5cab1d7dcbea7c0b4a.png",
+    "static/media/Avatar.svg": "/%7Brepo-name%7D/static/media/Avatar.ae08305e476768587715662fcdd99f28.svg",
+    "static/media/header-4@1,5x.svg": "/%7Brepo-name%7D/static/media/header-4@1,5x.71096e7f2f1efe1dbdab30fd2a6c578a.svg",
+    "static/media/iconCardEventsTOday.svg": "/%7Brepo-name%7D/static/media/iconCardEventsTOday.9cdca9b2f9f367412d024d0a67e7a7b6.svg",
+    "index.html": "/%7Brepo-name%7D/index.html",
+    "main.113548cc.js.map": "/%7Brepo-name%7D/static/js/main.113548cc.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.113548cc.js"
+  ]
+}
