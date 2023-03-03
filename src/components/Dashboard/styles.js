@@ -27,4 +27,8 @@ export const Main = styled.section`
   min-height: 100vh;
   overflow: hidden;
   padding: 2rem 2.5rem;
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
+    padding: 2rem .5rem;
+  }
 `;

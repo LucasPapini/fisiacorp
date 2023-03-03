@@ -82,7 +82,7 @@ export const AccordionButtons = styled.button`
 
   i img{
     transform: rotate3d(0, 0, 1, 270deg);
-    width: 15px;
+    width: 10px;
 
     @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
     display: none;

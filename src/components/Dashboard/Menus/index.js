@@ -3,7 +3,7 @@ import React from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 //Styles
-import { Container, Buttons } from './styles';
+import { Container, Buttons, Dropdown } from './styles';
 
 //icons/images
 import iconHomeMenu from '../../../assets/images/menu/Home - Iconly---Bold Copy.png';

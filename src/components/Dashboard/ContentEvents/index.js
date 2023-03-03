@@ -1,7 +1,9 @@
 import React from 'react';
 
 //Styles
-import { Container, Title, Slider, ContainerSlider, EventsToday, AlertSlider, ContentTextSlider, SubTitleCardEvents, CardEventesToday } from './styles';
+import { Container, Title, Slider, ContainerSlider, EventsToday, AlertSlider, ContentTextSlider, SubTitleCardEvents, CardEventesToday, MySlides, ContentSlide } from './styles';
+
+import { VscArrowSmallLeft, VscArrowSmallRight } from "react-icons/vsc";
 
 //Images/icon
 import iconCardEventsToday from '../../../assets/images/dashboard/iconCardEventsTOday.svg';
@@ -14,35 +16,17 @@ const ContentEvents = () => {
       </Container>
       <ContainerSlider>
         <Slider>
-          <AlertSlider>
-            <span>science</span>
-          </AlertSlider>
-          <ContentTextSlider
-            topMobile={'1'}
-            leftMobile={'1rem'}
-            rigthMobile={''}
-            bottomMobile={''}
-            topValue={'6rem'}
-            leftValue={'5rem'}
-            rigthValue={''}
-            bottomValue={''}
-          >
-            <h2>Youth Talent & Education</h2>
-          </ContentTextSlider>
-
-          <ContentTextSlider
-            topMobile={'1'}
-            leftMobile={'1'}
-            rigthMobile={'1rem'}
-            bottomMobile={''}
-            valueMobile={''}
-            topValue={'6rem'}
-            leftValue={'1'}
-            rigthValue={'6rem'}
-            bottomValue={''}
-          >
-            <h2>May, 20</h2>
-          </ContentTextSlider>
+          <MySlides>
+            <ContentSlide>
+              <AlertSlider>
+                <span>science</span>
+              </AlertSlider>
+              <h2 className='desktop'>Youth Talent & <br />Education</h2>
+              <h2 className='desktop'>May, 20</h2>
+            </ContentSlide>
+          </MySlides>
+          <button className='prev'><VscArrowSmallLeft size={20} /></button>
+          <button className='next'><VscArrowSmallRight size={20} /></button>
         </Slider>
         <EventsToday>
           <SubTitleCardEvents>Events Today</SubTitleCardEvents>

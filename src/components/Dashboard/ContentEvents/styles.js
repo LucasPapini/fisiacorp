@@ -28,6 +28,89 @@ export const ContainerSlider = styled.section`
 `;
 
 export const Slider = styled.div`
+  width: 100%;
+  position: relative;
+  margin: auto;
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
+    .desktop{
+      display: none;
+    }
+  }
+
+  button {
+    background: white;
+    border: none;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 0.3rem 1rem;
+    color: ${(props) => props.theme.colors.azulTitle};
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 5px;
+    user-select: none;
+    display: flex;
+
+    @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
+      top: 80%;
+    }
+  }
+
+  .next {
+    right: 1rem;
+    border-radius: 5px;
+  }
+
+  .prev {
+    left: 1rem;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: ${(props) => props.theme.colors.azulMenu};
+    color: white;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
+
+export const MySlides = styled.div`
   background-image: url(${bgContainerSlide});
   background-repeat: no-repeat;
   background-position: center;
@@ -35,10 +118,31 @@ export const Slider = styled.div`
   position: relative;
   height: 260px;
   border-radius: 30px;
-
   display: flex;
-
   position: relative;
+`;
+
+export const ContentSlide = styled.div`
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
+    gap: 1rem;
+  }
+
+  h2 {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 35px;
+
+    @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
+      font-size: 25px;
+      gap: 1rem;
+    }
+  }
 `;
 
 export const AlertSlider = styled.div`
@@ -54,32 +158,6 @@ export const AlertSlider = styled.div`
     text-transform: uppercase;
     font-family: "Nunito", sans-serif;
     font-size: ${(props) => props.theme.fontSizes.small};
-  }
-`;
-
-export const ContentTextSlider = styled.div`
-  position: absolute;
-  top: ${(props) => props.topValue || 0};
-  left: ${(props) => props.leftValue || 0};
-  right: ${(props) => props.rigthValue || 0};
-  bottom: ${(props) => props.bottomValue || 0};
-  max-width: 200px;
-
-  h2 {
-    color: white;
-    font-family: "Nunito", sans-serif;
-    font-size: ${(props) => props.theme.fontSizes.title};
-
-    @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
-      font-size: 25px;
-    }
-  }
-
-  @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
-    top: ${(props) => props.topMobile || 0};
-    left: ${(props) => props.leftMobile || 0};
-    right: ${(props) => props.rigthMobile || 0};
-    bottom: ${(props) => props.bottomMobile || 0};
   }
 `;
 

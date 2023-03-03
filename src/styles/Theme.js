@@ -9,6 +9,8 @@ const theme = {
     azulTitle: '#103460',
     azulLanguagem: '#192452',
     cinzaText: '#9D9BB6',
+    azulBg: '#1A2D7D',
+    azulBbBG: '#1883FF',
   },
 
   fontSizes: {
